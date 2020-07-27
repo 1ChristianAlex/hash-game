@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Game.DTO
+namespace HashGame.DTO
 {
     public class MoveGameDTO
     {

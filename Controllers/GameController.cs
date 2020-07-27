@@ -1,17 +1,25 @@
-using Game.DTO;
+using HashGame.DTO;
+using HashGame.Interface;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Game.Controllers
+namespace HashGame.Controllers
 {
     [Route("game")]
     [ApiController]
     public class GameController : ControllerBase
     {
+        private readonly IGameService _gameService;
+
+        public GameController(IGameService gameService)
+        {
+            _gameService = gameService;
+        }
         // Create a new game session
         [HttpPost]
         public ActionResult<dynamic> CreateGameSession([FromBody] CreateGameDTO value)
         {
-            return Ok(value.id);
+            string guid = _gameService.CreateGame(value.id);
+            return Ok(guid);
         }
 
         [HttpPost]

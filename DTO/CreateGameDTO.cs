@@ -1,4 +1,4 @@
-namespace Game.DTO
+namespace HashGame.DTO
 {
     public class CreateGameDTO
     {
