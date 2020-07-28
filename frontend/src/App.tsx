@@ -1,7 +1,15 @@
 import React from 'react';
+import AppRoutes from './routes';
+import { Store } from './store';
 
 function App() {
-  return <div className="App">Hello</div>;
+  return (
+    <>
+      <Store>
+        <AppRoutes />
+      </Store>
+    </>
+  );
 }
 
 export default App;

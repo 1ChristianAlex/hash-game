@@ -1,13 +1,7 @@
-import {
-  UPDATE_GAME,
-  CREATE_GAME,
-  UPDATE_PLAYER,
-  UPDATE_PLAYERX,
-  UPDATE_PLAYERY,
-} from './types';
+import { UPDATE_GAME, CREATE_GAME, UPDATE_PLAYER } from './types';
 import { IGame, IAction, IPlayer } from '../interfaces';
 
-const gameReducer = (state: IGame, action: IAction) => {
+const gameReducer = (state: IGame, action: IAction<IGame>) => {
   switch (action.type) {
     case UPDATE_GAME:
       return {
@@ -15,26 +9,20 @@ const gameReducer = (state: IGame, action: IAction) => {
         ...action.payload,
       };
     case CREATE_GAME:
-      return {};
+      return { ...action.payload };
 
     default:
       return state;
   }
 };
 
-const playerReducer = (state: IPlayer, action: IAction) => {
+const playerReducer = (state: IPlayer, action: IAction<IPlayer>) => {
   switch (action.type) {
     case UPDATE_PLAYER:
       return {
         ...state,
         ...action.payload,
       };
-    case UPDATE_PLAYERX:
-      return {};
-
-    case UPDATE_PLAYERY:
-      return {};
-
     default:
       return state;
   }

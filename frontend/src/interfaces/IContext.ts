@@ -1,6 +1,6 @@
-export interface Action {
+export interface Action<T = object> {
   type: string;
-  payload: object;
+  payload: T;
 }
 export interface Dispatch {
   dispatch(action: Action | null): void;
