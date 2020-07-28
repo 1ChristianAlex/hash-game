@@ -31,6 +31,7 @@ namespace API
             services.AddDbContext<DbContextGame>(options => options.UseSqlite(connection));
             services.AddControllers();
             services.AddScoped<IGameService, GameService>();
+            services.AddScoped<IPlayerService, PlayerService>();
 
         }
 

@@ -1,5 +1,4 @@
-using System;
-
+using System.ComponentModel.DataAnnotations;
 namespace HashGame.Models
 {
     public class Player
@@ -11,6 +10,7 @@ namespace HashGame.Models
 
         public int xPosition { get; set; }
         public int yPosition { get; set; }
-
+        public int gameId { get; set; }
+        public bool login { get; set; }
     }
 }

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using HashGame.Models;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 
@@ -6,6 +7,7 @@ namespace HashGame.Interface
     public interface IGameService
 
     {
-        string CreateGame(int id);
+        Game CreateGame();
+        List<Game> GetAll();
     }
 }

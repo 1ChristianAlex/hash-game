@@ -1,8 +1,9 @@
+
 using Microsoft.EntityFrameworkCore;
 
 namespace HashGame.Models
 {
-    public class DbContextGame : Microsoft.EntityFrameworkCore.DbContext
+    public class DbContextGame : DbContext
     {
         public DbContextGame(DbContextOptions<DbContextGame> options) : base(options)
         {

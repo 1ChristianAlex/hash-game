@@ -6,7 +6,8 @@ namespace HashGame.DTO
     {
         public int id { get; set; }
         public string player { get; set; }
-        public Dictionary<string, int> position { get; set; }
+        public int xPosition { get; set; }
+        public int yPosition { get; set; }
 
     }
 }

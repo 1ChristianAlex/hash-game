@@ -2,16 +2,14 @@
 using HashGame.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
-using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace backend.Migrations
 {
     [DbContext(typeof(DbContextGame))]
-    [Migration("20200727231323_inital")]
-    partial class inital
+    partial class DbContextGameModelSnapshot : ModelSnapshot
     {
-        protected override void BuildTargetModel(ModelBuilder modelBuilder)
+        protected override void BuildModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -23,10 +21,19 @@ namespace backend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<string>("currentTurn")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("firstPlayer")
                         .HasColumnType("TEXT");
 
+                    b.Property<string>("gameState")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("guid")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("status")
                         .HasColumnType("TEXT");
 
                     b.HasKey("id");
@@ -40,8 +47,14 @@ namespace backend.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
+                    b.Property<int>("gameId")
+                        .HasColumnType("INTEGER");
+
                     b.Property<string>("guid")
                         .HasColumnType("TEXT");
+
+                    b.Property<bool>("login")
+                        .HasColumnType("INTEGER");
 
                     b.Property<string>("player")
                         .HasColumnType("TEXT");
