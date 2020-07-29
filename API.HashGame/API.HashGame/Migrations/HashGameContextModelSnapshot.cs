@@ -22,6 +22,9 @@ namespace API.HashGame.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("TEXT");
 
+                    b.Property<DateTime>("CreateDate")
+                        .HasColumnType("TEXT");
+
                     b.Property<string>("CurrentTurn")
                         .HasColumnType("TEXT");
 

@@ -10,6 +10,8 @@ Na pasta root do projeto entre com:
 
     $ cd .\backend\
 
+    $ dotnet ef migrations add inital
+
     $ dotnet ef database update
 
     $ dotnet build

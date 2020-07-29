@@ -12,6 +12,9 @@ namespace API.HashGame.Services.DTO.Player
         [DataMember(Name = "name")]
         public string Name { get; set; }
 
+        [DataMember(Name = "isUsed")]
+        public bool IsUsed { get; set; }
+
         [DataMember(Name = "xPosition")]
         public int XPosition { get; set; }
 

@@ -20,6 +20,9 @@ namespace API.HashGame.Services.DTO.Game
         [DataMember(Name = "status")]
         public StatusEnum Status { get; set; }
 
+        [DataMember(Name = "createDate")]
+        public DateTime CreateDate { get; set; }
+
         [DataMember(Name = "players")]
         public ICollection<PlayerOutputDto> Players { get; set; }
     }

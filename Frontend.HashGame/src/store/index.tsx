@@ -1,5 +1,5 @@
 import React, { createContext, useReducer } from 'react';
-import { IGame, IPlayer, IAction } from '../interfaces';
+import { IGame, IPlayer, IAction } from '../Interfaces';
 import { gameReducer, playerReducer } from './reducers';
 
 interface IStore {

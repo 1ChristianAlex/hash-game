@@ -11,6 +11,7 @@ namespace API.HashGame.Data.Models
         {
             Id = Guid.NewGuid();
             Players = new List<Player>();
+            CreateDate = DateTime.Now;
         }
         #endregion
 
@@ -19,6 +20,8 @@ namespace API.HashGame.Data.Models
         public Guid Id { get; set; }
         public string CurrentTurn { get; set; }
         public string GameState { get; set; }
+
+        public DateTime CreateDate { get; set; }
         public StatusEnum Status { get; set; }
 
         public virtual List<Player> Players { get; set; }

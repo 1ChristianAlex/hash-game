@@ -4,6 +4,7 @@ using API.HashGame.Data.Models;
 using API.HashGame.Services.DTO.Game;
 using API.HashGame.Services.Services.Interfaces;
 using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -53,7 +54,9 @@ namespace API.HashGame.Services.Services
 
         public IEnumerable<GameOutputDto> GetAll()
         {
-            return _mapper.Map<IEnumerable<GameOutputDto>>(this._context.Games);
+            return _mapper.Map<IEnumerable<GameOutputDto>>(_context.Games
+                                                           .Include(join => join.Players)
+                                                           .OrderByDescending(game=> game.CreateDate));
         }
     }
 }

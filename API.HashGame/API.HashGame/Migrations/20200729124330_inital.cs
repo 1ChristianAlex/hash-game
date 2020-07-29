@@ -14,6 +14,7 @@ namespace API.HashGame.Migrations
                     Id = table.Column<Guid>(nullable: false),
                     CurrentTurn = table.Column<string>(nullable: true),
                     GameState = table.Column<string>(nullable: true),
+                    CreateDate = table.Column<DateTime>(nullable: false),
                     Status = table.Column<int>(nullable: false)
                 },
                 constraints: table =>

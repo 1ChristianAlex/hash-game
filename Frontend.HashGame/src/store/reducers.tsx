@@ -1,5 +1,5 @@
 import { UPDATE_GAME, CREATE_GAME, UPDATE_PLAYER } from './types';
-import { IGame, IAction, IPlayer } from '../interfaces';
+import { IGame, IAction, IPlayer } from '../Interfaces';
 
 const gameReducer = (state: IGame, action: IAction<IGame>) => {
   switch (action.type) {

@@ -1,8 +1,13 @@
 export interface Game {
-  id?: number;
-  guid?: number;
-  firstPlayer?: string;
+  id?: string;
   currentTurn?: string;
   gameState?: string;
-  status?: string;
+  createDate?: Date;
+  status?: statusGameEnum;
+}
+export enum statusGameEnum {
+  EmAndamento = 1,
+  Empate,
+  VencedorY,
+  VencedorX,
 }

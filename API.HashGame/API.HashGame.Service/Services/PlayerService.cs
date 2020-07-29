@@ -57,7 +57,7 @@ namespace API.HashGame.Services.Services
 
         public PlayerOutputDto JoinGame(Guid gameId)
         {
-            Player player = GetPlayer(gameId, true);
+            Player player = GetPlayer(gameId, false);
 
             if (player != null)
             {

@@ -1,5 +1,5 @@
 import { CREATE_GAME, UPDATE_GAME, UPDATE_PLAYER } from './types';
-import { IGame, IAction, IPlayer } from '../interfaces';
+import { IGame, IAction, IPlayer } from '../Interfaces';
 
 const createGame = (game: IGame): IAction<IGame> => {
   return {

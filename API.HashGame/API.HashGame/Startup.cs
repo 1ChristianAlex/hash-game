@@ -53,7 +53,12 @@ namespace API
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(option=>
+            {
+                option.AllowAnyOrigin();
+                option.AllowAnyHeader();
+                option.AllowAnyMethod();
+            });
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
