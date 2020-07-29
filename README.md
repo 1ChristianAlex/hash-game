@@ -21,11 +21,11 @@ Na pasta root do projeto entre com:
 
     $ cd .\API.HashGame\API.HashGame
 
-Caso não exista e a pasta `Migrations`, rode:
+Caso não exista e pasta `Migrations`, rode:
 
     $ dotnet ef migrations add inital
 
-Caso o arquivo `\API.HashGame\API.HashGameHashGame.db`:
+Caso o arquivo não exista `\API.HashGame\API.HashGameHashGame.db`:
 
     $ dotnet ef database update
 
