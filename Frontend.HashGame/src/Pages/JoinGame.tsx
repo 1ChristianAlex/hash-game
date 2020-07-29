@@ -3,7 +3,7 @@ import { GameService } from '../Services';
 import { useParams } from 'react-router-dom';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FaTimesCircle, FaCircle, FaSyncAlt } from 'react-icons/fa';
-import { IPlayer, GamePlayer } from '../Interfaces';
+import { IPlayer, GamePlayer } from '../interfaces';
 import { ModalConfirm } from '../Components';
 import { statusGame } from '../config/constans';
 

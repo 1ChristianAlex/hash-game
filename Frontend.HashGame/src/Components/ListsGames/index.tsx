@@ -1,6 +1,6 @@
 import React from 'react';
 import { Row, Col, ListGroup } from 'react-bootstrap';
-import { GamePlayer } from '../../Interfaces';
+import { GamePlayer } from '../../interfaces';
 import { statusGame } from '../../config/constans';
 import { useHistory } from 'react-router-dom';
 // import { Container } from './styles';

@@ -1,5 +1,5 @@
 import { Adapter } from './Adapter';
-import { GamePlayer, IPlayer } from '../Interfaces';
+import { GamePlayer, IPlayer } from '../interfaces';
 
 export class GameService extends Adapter {
   public async getAllGames(): Promise<GamePlayer[]> {

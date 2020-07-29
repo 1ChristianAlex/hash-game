@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Button, ListsGames, ModalConfirm } from '../Components';
 import { GameService } from '../Services';
-import { GamePlayer } from '../Interfaces';
+import { GamePlayer } from '../interfaces';
 // import { Container } from './styles';
 
 const ListGamesPage: React.FC = () => {
