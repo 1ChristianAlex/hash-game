@@ -2,6 +2,17 @@
 
 ## Author: Christian Alexsander da Silva Santos
 
+## API
+
+- C# .NET Core
+- EntityFramework
+- SQLite
+
+## Frontend
+
+- React
+- Typescript
+
 ### To run
 
 #### Start backend
