@@ -21,3 +21,15 @@ F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1
 F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.dll
 F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.pdb
 F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.genruntimeconfig.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\bin\Debug\netcoreapp3.1\API.HashGame.Data.deps.json
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\bin\Debug\netcoreapp3.1\API.HashGame.Data.runtimeconfig.json
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\bin\Debug\netcoreapp3.1\API.HashGame.Data.runtimeconfig.dev.json
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\bin\Debug\netcoreapp3.1\API.HashGame.Data.dll
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\bin\Debug\netcoreapp3.1\API.HashGame.Data.pdb
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.csprojAssemblyReference.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.AssemblyInfoInputs.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.AssemblyInfo.cs
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.csproj.CoreCompileInputs.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.dll
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.pdb
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Data\obj\Debug\netcoreapp3.1\API.HashGame.Data.genruntimeconfig.cache

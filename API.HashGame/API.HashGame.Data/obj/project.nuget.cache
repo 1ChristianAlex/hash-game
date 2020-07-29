@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oakHHwHq7hgn0Y/4vAukO8NcWSfkOVUxKWt2kzLaqxJ0ymSycI27ctqFUxxXG5Md1FHUaxM7pN/SVca/Xxq/OQ==",
+  "dgSpecHash": "ogmEeLNKmmgr4j+Sszu7MqcxXpNC6VDFaenOdphl+Ch60M6pTHehSOIWIxiQOwoy0SPhtr579cPbBrjrVj8f5A==",
   "success": true,
-  "projectFilePath": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj",
+  "projectFilePath": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Christian\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Christian\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

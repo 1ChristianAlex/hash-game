@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj": {}
+    "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj": {}
   },
   "projects": {
-    "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj": {
+    "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj",
+        "projectUniqueName": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj",
         "projectName": "API.HashGame.Data",
-        "projectPath": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj",
+        "projectPath": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj",
         "packagesPath": "C:\\Users\\Christian\\.nuget\\packages\\",
-        "outputPath": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\obj\\",
+        "outputPath": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Christian\\AppData\\Roaming\\NuGet\\NuGet.Config",

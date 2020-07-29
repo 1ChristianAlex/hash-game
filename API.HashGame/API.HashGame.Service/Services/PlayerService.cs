@@ -10,7 +10,6 @@ using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace API.HashGame.Services.Services
 {
@@ -184,12 +183,12 @@ namespace API.HashGame.Services.Services
 
             List<Dictionary<string, List<int>>> playerY = state.Where(px => px.Any(value => value.Key.ToUpper().Equals(POSITION_Y))).ToList();
 
-            if (playerY.Count > 3 && IsWin(playerY))
+            if (playerY.Count >= 3 && IsWin(playerY))
             {
                 return StatusEnum.VencedorY;
             }
 
-            else if (playerX.Count > 3 && IsWin(playerX))
+            else if (playerX.Count >= 3 && IsWin(playerX))
             {
                 return StatusEnum.VencedorX;
             }
@@ -208,6 +207,7 @@ namespace API.HashGame.Services.Services
             bool win = false;
 
             List<bool> diagonal = new List<bool>();
+            List<bool> sequence = new List<bool>();
             List<int> vertical = new List<int>();
             List<int> horizontal = new List<int>();
 
@@ -225,13 +225,17 @@ namespace API.HashGame.Services.Services
                     {
                         diagonal.Add(true);
                     };
+                    if (posX + posY == 2)
+                    {
+                        sequence.Add(true);
+                    }
 
                     vertical.Add(posX);
                     horizontal.Add(posY);
                 });
             });
 
-            if (diagonal.Count >= 3)
+            if (diagonal.Count >= 3 || sequence.Count >= 3)
             {
                 win = true;
                 return win;
@@ -240,9 +244,8 @@ namespace API.HashGame.Services.Services
             vertical.Sort();
 
             horizontal.Sort();
-
-            var quantidadeRepetidosX = vertical.Count() - vertical.Distinct().Count();
-            var quantidadeRepetidosY = horizontal.Count() - horizontal.Distinct().Count();
+            int quantidadeRepetidosX = GetListRepeatedItem(vertical);
+            int quantidadeRepetidosY = GetListRepeatedItem(horizontal);
 
             if (quantidadeRepetidosX >= 3 || quantidadeRepetidosY >= 3)
             {
@@ -250,6 +253,29 @@ namespace API.HashGame.Services.Services
             }
 
             return win;
+        }
+
+        private int GetListRepeatedItem(List<int> vertical)
+        {
+
+            Dictionary<int, int> listaNumeros = new Dictionary<int, int>();
+
+            vertical.ForEach(item =>
+            {
+                int val;
+                if (listaNumeros.TryGetValue(item, out val))
+                {
+
+                    listaNumeros[item] = val + 1;
+                }
+                else
+                {
+
+                    listaNumeros.Add(item, 1);
+                }
+            });
+
+            return listaNumeros.Values.Max();
         }
 
         private Game GetGame(Guid gameId)

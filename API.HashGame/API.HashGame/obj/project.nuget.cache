@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dLDnqnf+gbjl0nwjKN5LRIUVrBo4OgGiWb2iZ9Jb1TUXF9/ib4SqE3JP23/oN9S5fKaS2Gb12pwt4I6yrDhU0g==",
+  "dgSpecHash": "NmKr82NbaqDjD8f5hNRLcxdIy5LZ0iKV7WSXemUmif6tgGYA26mT1P5u417wLAwihgEj0uAFMVK8JZtYNXLqaw==",
   "success": true,
-  "projectFilePath": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame\\API.HashGame.csproj",
+  "projectFilePath": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame\\API.HashGame.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Christian\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\Christian\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

@@ -26,3 +26,17 @@ F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp
 F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.csproj.CopyComplete
 F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.dll
 F:\Projetos\dti-hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.pdb
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\bin\Debug\netcoreapp3.1\API.HashGame.Services.deps.json
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\bin\Debug\netcoreapp3.1\API.HashGame.Services.dll
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\bin\Debug\netcoreapp3.1\API.HashGame.Services.pdb
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\bin\Debug\netcoreapp3.1\API.HashGame.Data.dll
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\bin\Debug\netcoreapp3.1\API.HashGame.Data.pdb
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.csprojAssemblyReference.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.Messages.Message.resources
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.csproj.GenerateResource.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.AssemblyInfoInputs.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.AssemblyInfo.cs
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.csproj.CoreCompileInputs.cache
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.csproj.CopyComplete
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.dll
+F:\Projetos\hash-game\API.HashGame\API.HashGame.Service\obj\Debug\netcoreapp3.1\API.HashGame.Services.pdb

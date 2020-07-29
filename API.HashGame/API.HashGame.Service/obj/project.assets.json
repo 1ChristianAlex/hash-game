@@ -5701,11 +5701,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Service\\API.HashGame.Services.csproj",
+      "projectUniqueName": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Service\\API.HashGame.Services.csproj",
       "projectName": "API.HashGame.Services",
-      "projectPath": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Service\\API.HashGame.Services.csproj",
+      "projectPath": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Service\\API.HashGame.Services.csproj",
       "packagesPath": "C:\\Users\\Christian\\.nuget\\packages\\",
-      "outputPath": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Service\\obj\\",
+      "outputPath": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Service\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Christian\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5721,8 +5721,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj": {
-              "projectPath": "F:\\Projetos\\dti-hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj"
+            "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj": {
+              "projectPath": "F:\\Projetos\\hash-game\\API.HashGame\\API.HashGame.Data\\API.HashGame.Data.csproj"
             }
           }
         }
