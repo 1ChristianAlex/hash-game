@@ -1,4 +1,5 @@
 ﻿using API.HashGame.Services.DTO.Game;
+using System;
 using System.Collections.Generic;
 
 namespace API.HashGame.Services.Services.Interfaces
@@ -16,5 +17,8 @@ namespace API.HashGame.Services.Services.Interfaces
         /// </summary>
         /// <returns></returns>
         IEnumerable<GameOutputDto> GetAll();
+
+        GameOutputDto GetById(Guid id);
+
     }
 }

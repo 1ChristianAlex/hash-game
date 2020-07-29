@@ -20,7 +20,7 @@ const ListsGames: React.FC<IListGames> = ({ gamesList }) => {
     <Row>
       <Col md={12}>
         <ListGroup>
-          {gamesList.map((game) => {
+          {gamesList.map((game, index) => {
             return (
               <ListGroup.Item
                 action
@@ -29,7 +29,7 @@ const ListsGames: React.FC<IListGames> = ({ gamesList }) => {
                   joinGame(game.id!);
                 }}
               >
-                {game.id} {statusGame[game.status!]}{' '}
+                Partida {index} - {statusGame[game.status!]}{' '}
               </ListGroup.Item>
             );
           })}

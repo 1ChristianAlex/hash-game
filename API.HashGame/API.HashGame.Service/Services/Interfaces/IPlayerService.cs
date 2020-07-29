@@ -8,6 +8,10 @@ namespace API.HashGame.Services.Services.Interfaces
     {
         GameOutputDto CreatePlayers(Guid gameId);
         PlayerOutputDto JoinGame(Guid gameId);
+
+        PlayerOutputDto UnJoinGame(PlayerInputDto player);
         PlayerOutputDto Moviment(PlayerInputDto play);
+
+        
     }
 }

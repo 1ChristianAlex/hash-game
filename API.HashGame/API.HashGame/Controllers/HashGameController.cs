@@ -47,15 +47,42 @@ namespace API.HashGame.Controllers
                 return NotFound(e.Message);
             }
         }
-
+        [Route("unjoin")]
         [HttpPost]
-        [Route("{id}/moviment")]
-        public ActionResult<PlayerOutputDto> Moviment(int id, [FromBody] PlayerInputDto input)
+        public ActionResult<PlayerOutputDto> UnJoinGame([FromBody] PlayerInputDto input)
+        {
+            try
+            {
+                var player = _playerService.UnJoinGame(input);
+                return Ok(player);
+            }
+            catch (Exception e)
+            {
+                return NotFound(e.Message);
+            }
+        }
+        [HttpPost]
+        [Route("moviment")]
+        public ActionResult<PlayerOutputDto> Moviment([FromBody] PlayerInputDto input)
         {
             try
             {
                 var player = _playerService.Moviment(input);
                 return Ok(player);
+            }
+            catch (System.Exception)
+            {
+                return NotFound();
+            }
+        }
+        [HttpGet]
+        [Route("game/{id}/")]
+        public ActionResult<GameOutputDto> GetById(Guid id)
+        {
+            try
+            {
+                GameOutputDto game = _gameService.GetById(id);
+                return Ok(game);
             }
             catch (System.Exception)
             {

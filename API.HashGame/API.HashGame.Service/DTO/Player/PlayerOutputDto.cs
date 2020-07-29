@@ -21,5 +21,8 @@ namespace API.HashGame.Services.DTO.Player
         [DataMember(Name = "yPosition")]
         public int YPosition { get; set; }
 
+        [DataMember(Name = "gameId")]
+        public Guid GameId { get; set; }
+
     }
 }

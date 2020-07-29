@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.HashGame.Migrations
 {
     [DbContext(typeof(HashGameContext))]
-    [Migration("20200729124330_inital")]
+    [Migration("20200729143633_inital")]
     partial class inital
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

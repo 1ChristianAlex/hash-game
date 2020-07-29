@@ -57,11 +57,38 @@ namespace API.HashGame.Services.Services
 
         public PlayerOutputDto JoinGame(Guid gameId)
         {
-            Player player = GetPlayer(gameId, false);
+            Player player = GetPlayerByGameId(gameId);
 
             if (player != null)
             {
+
+                if (player.IsUsed == true)
+                {
+                    player.IsUsed = false;
+                    this._context.Players.Update(player);
+                    this._context.SaveChanges();
+                    player = this._context.Players.Where(p => p.GameId == gameId && p.Id != player.Id)?.First();
+                }
+
                 player.IsUsed = true;
+
+                this._context.Players.Update(player);
+                this._context.SaveChanges();
+
+                return _mapper.Map<PlayerOutputDto>(player);
+            }
+            else
+            {
+                throw new Exception(Messages.Message.PlayerNotExist);
+            }
+        }
+        public PlayerOutputDto UnJoinGame(PlayerInputDto input)
+        {
+            Player player = this._context.Players.Where(p => p.Id.Equals(input.Id)).First();
+
+            if (player != null)
+            {
+                player.IsUsed = false;
 
                 this._context.Players.Update(player);
                 this._context.SaveChanges();
@@ -77,7 +104,7 @@ namespace API.HashGame.Services.Services
         {
             List<Dictionary<string, List<int>>> oldState = new List<Dictionary<string, List<int>>>();
 
-            Player player = GetPlayer(playerToMove.Id, true);
+            Player player = GetPlayerId(playerToMove.Id);
 
             if (player == null)
             {
@@ -153,9 +180,9 @@ namespace API.HashGame.Services.Services
         {
             List<Dictionary<string, List<int>>> state = JsonConvert.DeserializeObject<List<Dictionary<string, List<int>>>>(gameState).ToList();
 
-            List<Dictionary<string, List<int>>> playerX = state.FindAll(pX => pX.Keys.ToList().Any(item => item == POSITION_X) == true);
+            List<Dictionary<string, List<int>>> playerX = state.Where(px => px.Any(value => value.Key.ToUpper().Equals(POSITION_X))).ToList();
 
-            List<Dictionary<string, List<int>>> playerY = state.FindAll(pX => pX.Keys.ToList().Any(item => item == POSITION_Y) == true);
+            List<Dictionary<string, List<int>>> playerY = state.Where(px => px.Any(value => value.Key.ToUpper().Equals(POSITION_Y))).ToList();
 
             if (playerY.Count > 3 && IsWin(playerY))
             {
@@ -204,51 +231,20 @@ namespace API.HashGame.Services.Services
                 });
             });
 
-            if (diagonal.Count > 3)
+            if (diagonal.Count >= 3)
             {
                 win = true;
                 return win;
             }
 
-            List<bool> verticalCount = new List<bool>();
-
             vertical.Sort();
-
-            int auxo = vertical.First();
-
-            for (int position = 0; position < vertical.Count; position++)
-            {
-                if (vertical[position] == auxo)
-                {
-                    verticalCount.Add(true);
-                }
-                else
-                {
-                    verticalCount.Clear();
-                    auxo = vertical[position];
-                }
-            }
-
-            List<bool> horizontalCount = new List<bool>();
 
             horizontal.Sort();
 
-            int auxoHo = horizontal.First();
+            var quantidadeRepetidosX = vertical.Count() - vertical.Distinct().Count();
+            var quantidadeRepetidosY = horizontal.Count() - horizontal.Distinct().Count();
 
-            for (int position = 0; position < horizontal.Count; position++)
-            {
-                if (horizontal[position] == auxoHo)
-                {
-                    horizontalCount.Add(true);
-                }
-                else
-                {
-                    horizontalCount.Clear();
-                    auxoHo = vertical[position];
-                }
-            }
-
-            if (horizontalCount.Count > 3 || verticalCount.Count > 3)
+            if (quantidadeRepetidosX >= 3 || quantidadeRepetidosY >= 3)
             {
                 win = true;
             }
@@ -261,11 +257,15 @@ namespace API.HashGame.Services.Services
             return this._context.Games.Where(game => game.Id.Equals(gameId))?.First();
         }
 
-        private Player GetPlayer(Guid gameId, bool exist)
+        private Player GetPlayerByGameId(Guid gameId)
         {
-            return this._context.Players.Where(p => p.GameId == gameId
-                                                     && p.IsUsed == exist)
-                                                     ?.First();
+            return this._context.Players.Where(p => p.GameId == gameId)?.First();
         }
+
+        private Player GetPlayerId(Guid id)
+        {
+            return this._context.Players.Where(p => p.Id == id)?.First();
+        }
+
     }
 }

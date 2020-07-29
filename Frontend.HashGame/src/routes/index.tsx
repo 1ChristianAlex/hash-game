@@ -9,9 +9,7 @@ const AppRoutes: React.FC = () => {
         <Route exact path="/">
           <ListGames />
         </Route>
-        <Route exact path="/:id/join">
-          <JoinGame />
-        </Route>
+        <Route exact path="/:id/join" component={JoinGame} />
       </Switch>
     </BrowserRouter>
   );

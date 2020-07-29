@@ -58,5 +58,13 @@ namespace API.HashGame.Services.Services
                                                            .Include(join => join.Players)
                                                            .OrderByDescending(game=> game.CreateDate));
         }
+
+        public GameOutputDto GetById(Guid id)
+        {
+            return _mapper.Map<GameOutputDto>(_context.Games
+                                                           .Include(join => join.Players)
+                                                           .Where(ga=> ga.Id.Equals(id))
+                                                           .First());
+        }
     }
 }

@@ -8,6 +8,7 @@ import { GamePlayer } from '../Interfaces';
 const ListGamesPage: React.FC = () => {
   const [gamesList, setGameList] = useState<GamePlayer[]>([]);
   const [togle, setTogle] = useState(false);
+
   useMemo(() => {
     const gameService = new GameService();
     gameService

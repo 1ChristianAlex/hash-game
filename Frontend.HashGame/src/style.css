@@ -1,0 +1,8 @@
+.box-hash-game {
+  cursor: pointer;
+  border: 1px solid black;
+}
+.box-hash-game:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
